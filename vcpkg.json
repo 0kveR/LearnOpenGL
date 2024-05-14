@@ -1,0 +1,27 @@
+{
+  "name" : "learnopengl",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "c30bf9d28c96e7a03adfec1faaaacfcf34ee2143",
+  "dependencies" : [ {
+    "name" : "egl-registry",
+    "version>=" : "2024-01-25"
+  }, {
+    "name" : "glad",
+    "version>=" : "0.1.36"
+  }, {
+    "name" : "glfw3",
+    "version>=" : "3.4"
+  }, {
+    "name" : "opengl-registry",
+    "version>=" : "2024-02-10#1"
+  }, {
+    "name" : "opengl",
+    "version>=" : "2022-12-04#3"
+  }, {
+    "name" : "vcpkg-cmake-config",
+    "version>=" : "2022-02-06#1"
+  }, {
+    "name" : "vcpkg-cmake",
+    "version>=" : "2024-04-18"
+  } ]
+}
