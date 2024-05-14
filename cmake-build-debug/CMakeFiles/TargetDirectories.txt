@@ -1,0 +1,3 @@
+C:/Users/krris/Documents/Programs/C++/LearnOpenGL/cmake-build-debug/CMakeFiles/LearnOpenGL.dir
+C:/Users/krris/Documents/Programs/C++/LearnOpenGL/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/krris/Documents/Programs/C++/LearnOpenGL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
