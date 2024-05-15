@@ -9,7 +9,7 @@ Project done in CLion w/ vcpkg. Though (mostly) unrelated, I want to link [this 
 - [ ] Getting started
   - [x] Creating a window 
   - [x] Hello Window
-  - [ ] Hello Triangle
+  - [x] Hello Triangle
   - [ ] Shaders
   - [ ] Textures
   - [ ] Transformations
