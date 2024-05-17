@@ -3,7 +3,7 @@
 Detecting compiler hash for triplet x64-mingw-dynamic...
 Compiler found: C:/mingw/x86_64-8.1.0-release-posix-seh-rt_v6-rev0/mingw64/bin/x86_64-w64-mingw32-g++.exe
 All requested packages are currently installed.
-Total install time: 1.6 us
+Total install time: 1 us
 egl-registry is header-only and can be used from CMake via:
 
   find_path(EGL_REGISTRY_INCLUDE_DIRS ")EGL/egl.h")
@@ -62,6 +62,6 @@ The OpenGL SDK is highly platform dependent and is usually an OS component. It's
     APPLE: consult your distribution vendor on the state of OpenGL support: https://support.apple.com/en-us/HT202823
 
 -- Running vcpkg install - done
--- Configuring done (3.3s)
+-- Configuring done (2.9s)
 -- Generating done (0.0s)
 -- Build files have been written to: C:/Users/krris/Documents/Programs/C++/LearnOpenGL/cmake-build-debug

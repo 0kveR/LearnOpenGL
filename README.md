@@ -10,7 +10,7 @@ Project done in CLion w/ vcpkg. Though (mostly) unrelated, I want to link [this 
   - [x] Creating a window 
   - [x] Hello Window
   - [x] Hello Triangle
-  - [ ] Shaders
+  - [x] Shaders
   - [ ] Textures
   - [ ] Transformations
   - [ ] Coordinate Systems
