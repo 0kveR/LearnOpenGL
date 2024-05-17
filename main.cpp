@@ -7,16 +7,19 @@ void processInput(GLFWwindow* window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 
 const char *vertexShaderSource = "#version 330 core\n"
-                                 "layout (location = 0) in vec3 aPos;\n"
+                                 "layout (location = 0) in vec3 aPos;\n" // the position variable has attribute position 0
+                                 "out vec4 vertexColor;\n" // specify a color output to the fragment shader
                                  "void main()\n"
                                  "{\n"
-                                 "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-                                 "}\0";
+                                 "    gl_Position = vec4(aPos, 1.0);\n" // see how we directly give a vec3 to vec4's constructor
+                                 "    vertexColor = vec4(0.5, 0.0, 0.0, 1.0);\n" // set the output variable to a dark-red color
+                                 "}\n\0";
 const char *fragmentShaderSource = "#version 330 core\n"
                                    "out vec4 FragColor;\n"
+                                   "uniform vec4 ourColor;\n" // the input variable from the vertex shader (same name and same type)
                                    "void main()\n"
                                    "{\n"
-                                   "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
+                                   "    FragColor = ourColor;\n"
                                    "}\n\0";
 
 int main() {
@@ -83,14 +86,18 @@ int main() {
     glDeleteShader(fragmentShader);
 
     float vertices[] = {
-            0.5f,  0.5f, 0.0f,  // top right
-            0.5f, -0.5f, 0.0f,  // bottom right
-            -0.5f, -0.5f, 0.0f,  // bottom left
-            -0.5f,  0.5f, 0.0f   // top left
+//            0.5f,  0.5f, 0.0f,  // top right
+//            0.5f, -0.5f, 0.0f,  // bottom right
+//            -0.5f, -0.5f, 0.0f,  // bottom left
+//            -0.5f,  0.5f, 0.0f   // top left
+            -0.5f, -0.5f, 0.0f,
+            0.5f, -0.5f, 0.0f,
+            0.0f,  0.5f, 0.0f
     };
     unsigned int indices[] = {  // note that we start from 0!
-            0, 1, 3,   // first triangle
-            1, 2, 3    // second triangle
+//            0, 1, 3,   // first triangle
+//            1, 2, 3    // second triangle
+            0, 1, 2
     };
 
     unsigned int VBO, VAO, EBO;
